@@ -107,31 +107,28 @@ bar_current_window = function(max_width)
     }
 end
 
-require "luacom"
-
-
-
-bar_battery_level = function()
-    return {
-        name = "CurrentWindow",
-        render = function()
-            Shell = luacom.CreateObject("WScript.Shell")
-            Shell:Run ("echo hi", 0)
-            return {
-                {
-                    text = "      ",
-                    fg = l_grey,
-                    bg = d_grey
-                },
-                {
-                    text = "hi",
-                    fg = d_grey,
-                    bg = l_grey
-                },
-            }
-        end
-    }
-end
+-- require "luacom"
+-- bar_battery_level = function()
+--     return {
+--         name = "CurrentWindow",
+--         render = function()
+--             Shell = luacom.CreateObject("WScript.Shell")
+--             Shell:Run ("echo hi", 0)
+--             return {
+--                 {
+--                     text = "      ",
+--                     fg = l_grey,
+--                     bg = d_grey
+--                 },
+--                 {
+--                     text = "hi",
+--                     fg = d_grey,
+--                     bg = l_grey
+--                 },
+--             }
+--         end
+--     }
+-- end
 
 -- ===============================================================
 --                         Config
