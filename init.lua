@@ -203,6 +203,10 @@ nog.config.rules = {
     ["code.exe"] = {
         has_custom_titlebar = true
     },
+    ["pycharm64.exe"] = {
+        has_custom_titlebar = true,
+        chromium = true
+    },
 }
 
 -- Nog Bindings
