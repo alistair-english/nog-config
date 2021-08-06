@@ -236,5 +236,9 @@ nog.gbind("alt+backspace", function()
 end)
 
 nog.gbind("alt+enter", function()
-    nog.launch("C:/Program Files/WindowsApps/Microsoft.WindowsTerminal_1.9.1942.0_x64__8wekyb3d8bbwe/wt.exe")
+    nog.launch("wt -p Ubuntu-20.04")
+end)
+
+nog.gbind("alt+shift+enter", function()
+    nog.launch("wt -p Windows PowerShell")
 end)
